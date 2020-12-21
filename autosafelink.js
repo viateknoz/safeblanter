@@ -1,8 +1,8 @@
 // AUTO SAFELINK FOR WWW.IDBLANTER.COM SAFELINK.BLANTER.NET
-var blog_url="https://safelink.viateknoz.com/"; // Homepage Blog Safelink
-var article1="/2020/12/10-secrets-to-healthy-computer-and.html"; // Article 1
-var article2="/2020/12/online-business-success.html"; // Article 2
-var article3="/2020/12/life-insurance-corporation-review-of.html"; // Article 3
+var blog_url="https://safelink.viateknoz.com"; // Homepage Blog Safelink
+var article1="/2020/12/the-hidden-threats-and-risks-of.html"; // Article 1
+var article2="/2020/12/earn-extra-income-4-good-paying-home.html"; // Article 2
+var article3="/2020/12/6-tips-for-success-as-trader.html"; // Article 3
 var protected_links = "viateknoz.com,facebook.com,twitter.com,instagram.com"; // Protected Links
 function auto_safeconvert(){var a=window.location.hostname,c=0;""==protected_links||protected_links.match(a)?""==protected_links&&(protected_links=a):protected_links+=", "+a;var b;a=document.getElementsByTagName("a");a_to_va=a.length;var d=(b=a_to_fa()).length;for(var e,f,h="",g=0;g<a_to_va;g++){e=!1;for(f=0;0==e&&f<d;)!(h=a[g].href).match(b[f])&&h&&h.match("http")||(e=!0),f++;if(0==e){e=Base64.encode(h+",");f=Math.floor(3*Math.random()+1);var k=null;"1"==f&&(k=""+article1);"2"==f&&
 (k=""+article2);"3"==f&&(k=""+article3);a[g].href=""+blog_url+k+"?url="+e;a[g].rel="nofollow";c++}}a=document.getElementById("anonyminized");b=document.getElementById("found_links");a&&(a.innerHTML+=c);b&&(b.innerHTML+=a_to_va)}function a_to_fa(){return protected_links=protected_links.replace(" ",""),protected_links.split(",")}
